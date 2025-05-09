@@ -11,7 +11,19 @@
       </head>
 <body>
     <header>
-        
+        <nav>
+            <ul>
+              <li>
+                <a href="/html/index.html"
+                  ><img src="/assets/icon.png" alt="" width="30"
+                /></a>
+              </li>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="micoleccion.html">Mi Colección</a></li>
+              <li><a href="login.html">Login/Registro</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
         <h1>Crear una cuenta nueva</h1>
         <p>Por favor, regístrate con tu correo para crear una cuenta y poder acceder a <em>Mi Colección de Libros</em></p>
     </header>
@@ -33,6 +45,10 @@
                 <input type="password" name="user-password" id="user-password" required>
                 <br>
                 <button type="submit">Registrar</button>
+                <br>
+                <input type="checkbox" name="agree_to_the_terms" id="agree_to_the_terms">
+                <label for="agree_to_the_terms">Acepto los <a href="/html/tems_and_conditions.html">términos y condiciones</a> del servicio y las <a href="/html/privacy-policy.html">políticas de privacidad</a></label>
+                
             </fieldset>
         </form>
     </main>
