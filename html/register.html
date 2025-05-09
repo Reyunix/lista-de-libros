@@ -11,24 +11,31 @@
       </head>
 <body>
     <header>
-        <h1>Iniciar sesión</h1>
+        
+        <h1>Crear una cuenta nueva</h1>
+        <p>Por favor, regístrate con tu correo para crear una cuenta y poder acceder a <em>Mi Colección de Libros</em></p>
     </header>
     <main>
         <form action="" method="post" name="contact-form" autocomplete="on">
             <fieldset>
-                <legend>Datos de inicio de sesión</legend>
-                <label for="username">Usuario o Correo</label>
+                <legend>Datos de registro</legend>
+                <label for="username">Nombre de usuario</label>
                 <input type="text" name="username" id="username" required>
+                <br>
+                <label for="email">Correo</label>
+                <input type="email" name="email" id="email" required>
                 <br>
                 <label for="user-password">Contraseña</label>
                 <input type="password" name="user-password" id="user-password" required>
                 <br>
-                <button type="submit">Iniciar sesión</button>
-                <a href="#">He olvidado mi contraseña</a>
+                <!-- FALTA POR IMPLEMENTAR CON JAVASCRIPT -->
+                <label for="user-password">Confirmar contraseña</label>
+                <input type="password" name="user-password" id="user-password" required>
+                <br>
+                <button type="submit">Registrar</button>
             </fieldset>
         </form>
     </main>
-
 </body>
 <footer>&copy; 2025 <em>Mi colección de Libros <a href="https://github.com/Reyunix/lista-de-libros">Repositorio de GitHub</a></em></footer>
 
