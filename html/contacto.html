@@ -1,4 +1,51 @@
-<h1>Bienvenido a <em>Mi Colección de Libros</em></h1>
-<h2>
- Comienza a organizar y a llevar seguimiento de tus libros favoritos
-</h2>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Colección de Libros</title>
+    <link rel="shortcut icon" href="/assets/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+        <nav>
+            <ul>
+              <li>
+                <a href="/html/index.html"
+                  ><img src="/assets/icon.png" alt="" width="30"
+                /></a>
+              </li>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="micoleccion.html">Mi Colección</a></li>
+              <li><a href="login.html">Login/Registro</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+    </header>
+    <main>
+      <h1>Página de contacto</h1>
+      <p>Por favor, mándanos cualquier duda o sugerencia que tengas sobre nuestra web.</p>
+    <form action="" method="post" name="contact-form" autocomplete="on">
+      <fieldset>
+        <legend>Información de Contacto</legend>
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name" placeholder="Adrián Romero" required>
+        <br>
+        <label for="email">Correo</label>
+        <input type="email" name="email" id="email" placeholder="example@email.com" required>
+        <br>
+        <label for="subject">Asunto</label>
+        <input type="text" name="subject" id="subject" placeholder="Sugerencia" required>
+        <br>
+        <label for="message">Mensaje</label>
+        <textarea name="message" id="message" placeholder="Escribe aquí tu mensaje..." rows="8" cols="40" required></textarea>
+        <br>
+        <button type="submit">Enviar mensaje</button>
+      
+      </fieldset>
+    </form>
+    </main>
+    <footer>&copy; 2025 <em>Mi colección de Libros</em></footer>
+  </body>
+</html>
