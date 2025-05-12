@@ -5,26 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Colección de Libros</title>
     <link rel="shortcut icon" href="/assets/icon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="header">
+      <nav class="main-menu">
         <ul>
           <li><a href="/html/index.html"><img src="/assets/icon.png" alt="" width="30"/></a></li>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="micoleccion.html">Mi Colección</a></li>
-          <li><a href="login.html">Login/Registro</a></li>
           <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="login.html">Login/Registro</a></li>
+
         </ul>
       </nav>
-      <h1>Bienvenido a <em>Mi Colección de Libros</em></h1>
-      <h2>
-        Comienza a organizar y a llevar de seguimiento de tus <em>todas tus lecturas</em>
-      </h2>
-      <a href="/html/micoleccion.html">¡Crea tu primera colección!</a>
+      <h1 class="main-title">Bienvenido a <em>Mi Colección de Libros</em></h1>
+      <h2 class="subtitle">Comienza a organizar y a llevar de seguimiento de tus <em>todas tus lecturas</em></h2>
+      <a href="/html/micoleccion.html" class="action-link">¡Crea tu primera colección!</a>      
+      <img src="/assets/img/cover.jpg" alt="" class="cover">
     </header>
-    <main>
+    <main class="main">
       <article>
         <section id="introduction">
           <h2>¿Te gusta leer?</h2>
@@ -46,12 +50,12 @@
           </ul>
         </section>
         <footer>
-          <a href="/html/micoleccion.html">¡Empieza a coleccionar!</a>
+          <a href="/html/micoleccion.html" class="action-link">¡Empieza a coleccionar!</a>
         </footer>
       </article>
     </main>
-    <footer>
-      &copy; 2025<em> Mi colección de Libros
+    <footer class="main-footer">
+      &copy; 2025 - Todo los derechos reservados<em> Mi colección de Libros
         <a href="https://github.com/Reyunix/lista-de-libros" target="_blank">Repositorio de GitHub</a></em>
     </footer>
   </body>
