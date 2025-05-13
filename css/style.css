@@ -1,76 +1,95 @@
-/* Colores */
+/* Colores y medidas*/
 :root{
 
-    --main-color: #faebd7;
-    --secondary-color: #856f24;
+    --main-color: #2a2928;
+    --secondary-color: #f7e1a1;
     --transparent-color: rgb(0, 0, 0, 0);
-    --dark-color: #333
+    --dark-color: #141413;
+    --default-gap: 0.3rem;
+    --mid-gap: 0.5rem;
+    --dark-text-color: rgb(255, 255, 255);
+    --light-text-color: rgb(255, 255, 255);
 }
 
 /* Fuentes */
-
+html{
+    font-size: 20px;
+}
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
 .main-title {
-    
+  font-size: 3.5rem;
   font-family: "Amarante", serif;
-  font-weight: 700;
-  font-style: normal;
-  color: black;
+  color: var(--dark-text-color);
+  margin:0;
+  margin-top: 3rem;
 }
 
 .subtitle{
-    color: black;
+    color: var(--dark-text-color);
 }
 
 /* Estilos */
+body main{color: var(--light-text-color);;
+}
+
+body {
+    background-color: #363735;
+    color: white;
+}
 .main-menu ul {
     display: flex;
-    gap: 0.2rem;
+    gap: var(--mid-gap);
     list-style-type: none;
-    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    flex-wrap: wrap;
 }
+
 
 .main-menu a {
-    color: white;   
+    color: var(--dark-text-color);   
     text-decoration: none;
-    background-color: rgb(0, 0, 0);
     padding: 0.3rem;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
-.main-menu li:first-child a{
-    background-color: var(--transparent-color);
-}
 
 .action-link{
     background-color: var(--secondary-color);
-    color: white;
-    padding: 15px;
+    color: var(--dark-color);
+    padding: 0.8rem;
     font-weight: 500;
     border-radius: 30px;
     box-sizing: border-box;
+    display: flex;
+    max-width: 15rem;
+    justify-content: center;
+    flex-wrap: wrap;
 
 }
 
 .main{
     background-color: var(--main-color);
-    padding: 25px;
-    max-width: 65dvw;
+    padding: 2rem;
+    max-width: 85dvw;
     box-sizing: border-box;
     border-radius: 30px;
-    margin-bottom: 20px;
-    min-width: 25rem;
+    min-width: 30dvw;
 }
 
 
 .header {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    flex-flow: column;
     max-width: 80dvw;
+    justify-content: space-between;
 }
 
 body{
@@ -79,7 +98,8 @@ body{
     align-items: center;
     margin: 0;
     min-height: 100vh;
-    justify-content:space-between;
+    gap: 1.5rem;
+    /* justify-content:space-between; */
 }
 
 .main ul{
@@ -87,10 +107,10 @@ body{
 }
 
 .main-footer{
-    background-color: rgb(34, 34, 29);
-    height: 20dvh;
-    width: 100%;
-    color: rgb(255, 255, 255);
+    background-color: var(--dark-color);
+    min-height: 20dvh;
+    width: 100dvw;
+    color: var(--light-text-color);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -100,7 +120,7 @@ body{
 }
 .main-footer a {
     text-decoration: none;
-    color: white;
+    color: var(--light-text-color);
     font-weight: 700;
 }
 
@@ -116,21 +136,56 @@ a{
 
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    padding: 1rem;
+    gap: var(--default-gap);
+    padding: 0.8rem;
 }
 
-input, button{
-    border-radius: 3rem;
-    height: 1.5rem;
+.input-box{
+    border-radius: 0.5rem;
+    min-height: 1.5rem;
     border: 0;
+    background-color: #e3e3e3;
+    margin-bottom: var(--mid-gap) ;
 }
 
-button{
+textarea{
+    background-color: rgb(232, 232, 232);
+}
+
+.submit-buttom{
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--dark-color);
+    border-radius: 0.5rem;
+    margin-bottom: var(--mid-gap);
+    min-height: 2rem;
+    max-width: 10rem;
+    font-size: 1rem;
 }
 
 .main footer{
     flex-flow: row wrap;
+}
+.tems_and_conditions{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: var(--default-gap);
+}
+
+/* hover */
+
+.main-menu a {
+    padding: var(--mid-gap);
+    box-sizing: border-box;
+    transition: background-color 0.7s ease;
+    border-radius: 30px;
+    
+}
+
+.main-menu a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+    color: black;
+
+    color: var(--dark-color);
 }

@@ -6,43 +6,43 @@
     <title>Mi Colección de Libros</title>
     <link rel="shortcut icon" href="/assets/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="/css/style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
   </head>
   <body>
     <header class="header">
       <nav class="main-menu">
         <ul>
-          <li><a href="/html/index.html"><img src="/assets/icon.png" alt="" width="30"/></a></li>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="micoleccion.html">Mi Colección</a></li>
+          <li><a href="contacto.html">Contacto</a></li>          
           <li><a href="login.html">Login/Registro</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
-      <h1>Página de contacto</h1>
+      <h1 class="main-title">Página de contacto</h1>
       <p>Por favor, mándanos cualquier duda o sugerencia que tengas sobre nuestra web.</p>
     </header>
     <main class="main">      
-    <form action="" method="post" name="contact-form" autocomplete="on">
-      <fieldset>
+    <form action="" method="post" name="contact-form" autocomplete="on" class="form">
+      <fieldset class="form-container">
         <legend>Información de Contacto</legend>
         <label for="name">Nombre</label>
-        <input type="text" name="name" id="name" placeholder="Adrián Romero" required>
-        <br>
+        <input type="text" name="name" id="name" class="input-box" placeholder="Adrián Romero" required>
         <label for="email">Correo</label>
-        <input type="email" name="email" id="email" placeholder="example@email.com" required>
-        <br>
+        <input type="email" name="email" id="email" class="input-box" placeholder="example@email.com" required>
         <label for="subject">Asunto</label>
-        <input type="text" name="subject" id="subject" placeholder="Sugerencia" required>
-        <br>
+        <input type="text" name="subject" id="subject" class="input-box" placeholder="Sugerencia" required>
         <label for="message">Mensaje</label>
-        <textarea name="message" id="message" placeholder="Escribe aquí tu mensaje..." rows="8" cols="40" required></textarea>
-        <br>
-        <button type="submit">Enviar mensaje</button>      
+        <textarea name="message" id="message" class="input-box" placeholder="Escribe aquí tu mensaje..." rows="8" cols="40" required></textarea>
+        <button type="submit" class="submit-buttom">Enviar mensaje</button>      
       </fieldset>
     </form>
     </main>
     <footer class="main-footer">
-      &copy; 2025<em> Mi colección de Libros
+      &copy; 2025 - Todo los derechos reservados<em> Mi colección de Libros
         <a href="https://github.com/Reyunix/lista-de-libros" target="_blank">Repositorio de GitHub</a></em>
     </footer>
   </body>
