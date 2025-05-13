@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class="main-menu">
         <ul>
           <li>
@@ -22,32 +22,33 @@
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
+      <i class="fa-solid fa-circle-user"></i>
       <h1>Iniciar sesión</h1>
     </header>
-    <main>
-      <form action="" method="post" name="contact-form" autocomplete="on">
-        <fieldset>
+    <main class="main">
+      <form action="" method="post" name="contact-form" autocomplete="on" class="form">
+        <fieldset class="form-container">
           <legend>Datos de inicio de sesión</legend>
           <label for="username">Usuario o Correo</label>
-          <input type="text" name="username" id="username" required />
-          <br />
+          <input type="text" name="username" id="username" class="input-box" />
+          
           <label for="user-password">Contraseña</label>
           <input
             type="password"
             name="user-password"
             id="user-password"
+            class="input-box"
             required
           />
-          <br />
           <button type="submit">Iniciar sesión</button>
-          <br />
+          
           <a href="#">He olvidado mi contraseña</a>
-          <br /><br />
+          
           <a href="/html/register.html">Crear cuenta nueva</a>
         </fieldset>
       </form>
     </main>
-    <footer>
+    <footer class="main-footer">
       &copy; 2025<em> Mi colección de Libros
         <a href="https://github.com/Reyunix/lista-de-libros" target="_blank">Repositorio de GitHub</a></em>
     </footer>

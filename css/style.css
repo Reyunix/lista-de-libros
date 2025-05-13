@@ -2,7 +2,7 @@
 :root{
 
     --main-color: #faebd7;
-    --secondary-color: #efba09;
+    --secondary-color: #856f24;
     --transparent-color: rgb(0, 0, 0, 0);
     --dark-color: #333
 }
@@ -18,25 +18,26 @@ body{
   font-family: "Amarante", serif;
   font-weight: 700;
   font-style: normal;
-  color: var(--secondary-color);
+  color: black;
 }
 
 .subtitle{
-    color: white;
+    color: black;
 }
 
 /* Estilos */
 .main-menu ul {
     display: flex;
-    gap: 4px;
+    gap: 0.2rem;
     list-style-type: none;
+    flex-flow: row wrap;
 }
 
 .main-menu a {
     color: white;   
     text-decoration: none;
     background-color: rgb(0, 0, 0);
-    padding: 7px;
+    padding: 0.3rem;
 }
 
 .main-menu li:first-child a{
@@ -56,18 +57,20 @@ body{
 .main{
     background-color: var(--main-color);
     padding: 25px;
-    width: 75%;
+    max-width: 65dvw;
     box-sizing: border-box;
     border-radius: 30px;
     margin-bottom: 20px;
+    min-width: 25rem;
 }
+
 
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
     overflow: hidden;
+    max-width: 80dvw;
 }
 
 body{
@@ -75,10 +78,12 @@ body{
     flex-direction: column;
     align-items: center;
     margin: 0;
+    min-height: 100vh;
+    justify-content:space-between;
 }
 
 .main ul{
-    margin-bottom: 30px;
+    margin-bottom: 6dvh;
 }
 
 .main-footer{
@@ -93,13 +98,39 @@ body{
     padding: 1rem;
 
 }
+.main-footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
 
-.cover{
+a{
+    color: var(--secondary-color);
+}
 
-    background-color: black;
-    
-    position: absolute;
-    z-index: -1;
-    filter: blur(5px);
+.form-container{
+    display: flex;
+    justify-content: center;
+}
+.form-container{
 
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+input, button{
+    border-radius: 3rem;
+    height: 1.5rem;
+    border: 0;
+}
+
+button{
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.main footer{
+    flex-flow: row wrap;
 }
