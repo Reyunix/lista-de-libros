@@ -6,6 +6,7 @@
     <title>Mi Colección de Libros</title>
     <link rel="shortcut icon" href="/assets/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/form-contact.css" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,13 +31,13 @@
       <fieldset class="form-container">
         <legend>Información de Contacto</legend>
         <label for="name">Nombre</label>
-        <input type="text" name="name" id="name" class="input-box" placeholder="Adrián Romero" required>
+        <input type="text" name="name" id="name" class="input-box" placeholder="Adrián Romero" autofocus required>
         <label for="email">Correo</label>
         <input type="email" name="email" id="email" class="input-box" placeholder="example@email.com" required>
         <label for="subject">Asunto</label>
-        <input type="text" name="subject" id="subject" class="input-box" placeholder="Sugerencia" required>
+        <input type="text" name="subject" id="subject" class="input-box" placeholder="Sugerencia" spellcheck="true" required>
         <label for="message">Mensaje</label>
-        <textarea name="message" id="message" class="input-box" placeholder="Escribe aquí tu mensaje..." rows="8" cols="40" required></textarea>
+        <textarea name="message" id="message" class="input-box" placeholder="Escribe aquí tu mensaje..." spellcheck="true" required></textarea>
         <button type="submit" class="submit-buttom">Enviar mensaje</button>      
       </fieldset>
     </form>

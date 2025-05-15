@@ -1,0 +1,26 @@
+textarea {
+    resize: vertical;
+    height: 10rem;
+    max-height: 20rem;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: var(--default-gap);
+    padding: 0.8rem;
+}
+
+.input-box{
+    border-radius: 0.5rem;
+    min-height: 1.7rem;
+    border: 0;
+    background-color: var(--background-light-color);
+    margin-bottom: var(--mid-gap) ;
+    font-size: 1rem;
+}
+
+.submit-button {
+    cursor: pointer;
+}

@@ -6,6 +6,13 @@
     <title>Mi Colección de Libros</title>
     <link rel="shortcut icon" href="/assets/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/form-contact.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
   </head>
   <body>
     <header class="header">
@@ -17,7 +24,6 @@
           <li><a href="login.html">Login/Registro</a></li>
         </ul>
       </nav>
-      <i class="fa-solid fa-circle-user"></i>
       <h1 class="main-title">Iniciar sesión</h1>
     </header>
     <main class="main">
@@ -25,11 +31,11 @@
         <fieldset class="form-container">
           <legend>Datos de inicio de sesión</legend>
           <label for="username">Usuario o Correo</label>
-          <input type="text" name="username" id="username" class="input-box" />
+          <input type="text" name="username" id="username" class="input-box" autofocus required/>
           
           <label for="user-password">Contraseña</label>
           <input
-            type="password"
+          type="password"
             name="user-password"
             id="user-password"
             class="input-box"
