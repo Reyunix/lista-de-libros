@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
+  <!-- Metadatos y enlaces -->
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Colección de Libros</title>
-    <link rel="shortcut icon" href="/assets/icon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/form-contact.css" />
-
-    <!-- Fonts -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/img/icon.png" type="image/x-icon">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/form-contact.css">
+    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
+    <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
   </head>
+  <!-- Contenido principal de la página -->
   <body>
+    <!-- Encabezado principal y barra de navegación -->
     <header class="header">
       <nav class="main-menu">
         <ul>
@@ -25,39 +30,49 @@
         </ul>
       </nav>
       <h1 class="main-title">Iniciar sesión</h1>
+      <p>Introduce tus credenciales para acceder a tu cuenta</p>
     </header>
-    <main class="main">
-      <form action="" method="post" name="contact-form" autocomplete="on" class="form">
-        <fieldset class="form-container">
-          <legend>Datos de inicio de sesión</legend>
+    <main class="main-content">
+      <!-- Sección de formulacio de incio de sesión -->
+      <section class="login-section">
+        <!-- Las acciones están pendientes de ser implementadas en el backend -->
+        <form action="#" method="post" name="login-form" autocomplete="on" class="form">
+          <fieldset class="form-container">
+            <legend>Datos de inicio de sesión</legend>
 
-          <label for="username">Usuario o Correo</label>
-          <input type="text" name="username" id="username" class="input-box" autofocus required/>
-          
-          <label for="user-password">Contraseña</label>
-          <input type="password" name="user-password" id="user-password" class="input-box" required/>
-          <a href="#" class="hover-opacity">He olvidado mi contraseña</a>
+            <label for="username">Usuario o Correo</label>
+            <input type="text" name="username" id="username" class="input-box" autofocus required/>
+            
+            <label for="user-password">Contraseña</label>
+            <input type="password" name="user-password" id="user-password" class="input-box" required/>
+            <!-- No implementado todavía -->
+            <a href="#" class="hover-opacity">He olvidado mi contraseña</a>
 
-          <button type="submit" class="submit-button hover-opacity">Iniciar sesión</button>
-          <a href="/html/register.html" class="white-button ">Crear cuenta</a>
-        </fieldset>
-      </form>
+            <button type="submit" class="submit-button hover-opacity">Iniciar sesión</button>
+            <a href="/html/register.html" class="white-button ">Crear cuenta</a>
+          </fieldset>
+        </form>
+      </section>
     </main>
+    <!-- Pie principal de la página -->
     <footer class="main-footer">
       <section class="footer-info">
-        &copy; 2025 - Todo los derechos reservados</section>
+        &copy; 2025 - Todo los derechos reservados
+      </section>
+      <!-- Enlaces internos -->
       <section class="links-of-interest">
         <nav class="footer-nav">        
           <ul>
-            <li><a href="/html/contacto.html">Contacto</a></li>
-            <li><a href="/html/tems_and_conditions.html">Términos y Condiciones</a></li>
-            <li><a href="/html/privacy-policy.html">Políticas de Privacidad</a></li>
+            <li class="hover-opacity"><a href="/html/contacto.html">Contacto</a></li>
+            <li class="hover-opacity"><a href="/html/terms_and_conditions.html">Términos y Condiciones</a></li>
+            <li class="hover-opacity"><a href="/html/privacy-policy.html">Políticas de Privacidad</a></li>
           </ul>
         </nav>
       </section>
+      <!-- Enlaces externos -->
       <section class="social-links">
-        <a href="https://github.com/Reyunix/lista-de-libros" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/franurzualopez/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Reyunix/lista-de-libros" class="hover-opacity" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/franurzualopez/" class="hover-opacity" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
       </section>
     </footer>
   </body>    

@@ -1,11 +1,13 @@
-/* Forms stylesheet */
+/* Hoja de estilos para formularios */
 
+/* Estilo genérico */
 textarea{
     resize: vertical;
     height: 10rem;
     max-height: 20rem;
 }
 
+/* Estilos específicos */
 .form-container{
     display: flex;
     justify-content: center;
@@ -20,12 +22,12 @@ textarea{
     }    
 }
 
-.input-box{
+.input-box{         /* Caja de texto de introducción de datos*/
     border-radius: 0.5rem;
     min-height: 1.7rem;
     border: 0;
     background-color: var(--background-light-color);
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .submit-button{
@@ -43,7 +45,7 @@ textarea{
     font-weight: 500;
 }
 
-.white-button{
+.white-button{  /* Enlace que funciona como botón secundario*/
     border: 1px solid;
     padding: var(--default-gap);
     border-radius: 0.5rem;
@@ -65,9 +67,12 @@ textarea{
     }
 }
 
-/* Hover and animations */
-.white-button{
+.checkbox {
+    cursor: pointer;
+}
 
+/* Hover y animaciones */
+.white-button{
     transition: color 0.3s ease;
     transition: background-color 0.3s ease;
 }
@@ -78,9 +83,7 @@ textarea{
     border-color: var(--secondary-color);
 }
 
-
-/* Media Queries */
-
+/* Media Queries para mejorar la experiencia responsive*/
 @media (min-width: 771px){
     .form{
         min-width: 25rem;
@@ -89,7 +92,6 @@ textarea{
         height: 2rem;
     }
 }
-
 
 @media (max-width: 770px){
     .submit-button{
@@ -101,8 +103,6 @@ textarea{
     }
 
     .form-container {
-       align-items: center;
-
-        
+       align-items: center;        
     }
 }

@@ -1,4 +1,4 @@
-/*  General stylesheet */
+/*  Hoja de estilos general */
 
 /* Variables */
 :root{
@@ -15,8 +15,8 @@
     --mid-gap: 0.5rem;
 }
 
-/* Fonts */
-html{
+/* Fuentes */
+html{           /* Aumento el tamaño de rem para mejorar la legibilidad*/
     font-size: 20px;
 }
 body{
@@ -24,15 +24,15 @@ body{
     line-height: 1.3;
 }
 
-.main-title{
+.main-title{        /* Estilo del h1 */
   font-size: 3.5rem;
   font-family: "Amarante", serif;
   margin:0;
   margin-top: 3rem;
 }
 
-/* Styles */
-a{
+/* Estilos globales */
+a{                      /* Estilo por defecto de todos los enlaces*/
     color: var(--enhance-color);   
     text-decoration: none;
 }
@@ -50,14 +50,13 @@ body{
     color: var(--light-text-color);
 }
 
-.main-menu ul{
+/*  Encabezado */
+.header{
     display: flex;
-    gap: var(--mid-gap);
-    list-style-type: none;
-    justify-content: center;
     align-items: center;
-    padding: 0;
-    flex-wrap: wrap;
+    flex-flow: column;
+    max-width: 80dvw;
+    justify-content: space-between;
 }
 
 .main-menu a{
@@ -66,7 +65,9 @@ body{
     font-weight: 700;
     font-size: 1rem;
 }
-.main{
+
+/* Contenido principal */
+.main-content{
     display: flex;
     flex-direction: row;
     background-color: var(--main-dark-color);
@@ -78,32 +79,43 @@ body{
     gap: 1.5rem;
 }
 
-.header{
+.main-menu ul{
     display: flex;
+    gap: var(--mid-gap);
+    list-style-type: none;
+    justify-content: center;
     align-items: center;
-    flex-flow: column;
-    max-width: 80dvw;
-    justify-content: space-between;
+    padding: 0;
+    flex-wrap: wrap;
 }
 
 .article section:first-child h2{
     margin-top: 0;
 }
 
-.action-link{
-    background-color: var(--enhance-color);
-    color: var(--dark-text-color);
-    padding: 0.8rem;
-    font-weight: 500;
-    border-radius: 18px;
-    box-sizing: border-box;
+
+
+/* Sección complementaria */
+.top-books{
+    border-radius: 30px;
+    padding:var(--mid-gap);
     display: flex;
-    max-width: 15rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 2rem;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+
+    h2{
+        text-align: center;        
+    }
+
+    li{
+        font-size: 0.9rem;
+        margin-bottom: var(--mid-gap);
+    }
 }
 
+/* Pie de Página */
 .main-footer{
     background-color: var(--footer-color);
     min-height: 20dvh;
@@ -130,32 +142,28 @@ body{
     align-items: center;
 }
 
-.top-books{
-    border-radius: 30px;
-    padding:var(--mid-gap);
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    background-color: var(--secondary-color);
-    color: var(--light-text-color);
-
-    h2{
-        text-align: center;        
-    }
-
-    li{
-        font-size: 0.9rem;
-        margin-bottom: var(--mid-gap);
-    }
-}
-
-.social-links i{
+/* Estilos polivalentes */
+.social-links i{        /* Para los iconos*/
     font-size: 1.5rem;
     margin: var(--mid-gap);
     color: var(--enhance-color);
 }
+            
+.action-link{       /* Para enlaces de llamada a la acción */
+    background-color: var(--enhance-color);
+    color: var(--dark-text-color);
+    padding: 0.8rem;
+    font-weight: 500;
+    border-radius: 18px;
+    box-sizing: border-box;
+    display: flex;
+    max-width: 15rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
 
-/* Hover and animations */
+/* Hover y animaciones */
 .hover-opacity{
     transition: opacity 0.3s ease;
 }
@@ -164,7 +172,7 @@ body{
     opacity: 0.7;
 }
 
-/* Media Queries */
+/* Media Queries para mejorar la experiencia responsive */
 @media (max-width: 770px){
     .main {
         flex-direction: column;
