@@ -18,10 +18,10 @@
     <header class="header">
       <nav class="main-menu">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="micoleccion.html">Mi Colección</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="login.html">Login/Registro</a></li>
+          <li class="hover-opacity"><a href="index.html">Inicio</a></li>
+          <li class="hover-opacity"><a href="micoleccion.html">Mi Colección</a></li>
+          <li class="hover-opacity"><a href="contacto.html">Contacto</a></li>
+          <li class="hover-opacity"><a href="login.html">Iniciar Sesión</a></li>
         </ul>
       </nav>
       <h1 class="main-title">Iniciar sesión</h1>
@@ -30,22 +30,16 @@
       <form action="" method="post" name="contact-form" autocomplete="on" class="form">
         <fieldset class="form-container">
           <legend>Datos de inicio de sesión</legend>
+
           <label for="username">Usuario o Correo</label>
           <input type="text" name="username" id="username" class="input-box" autofocus required/>
           
           <label for="user-password">Contraseña</label>
-          <input
-          type="password"
-            name="user-password"
-            id="user-password"
-            class="input-box"
-            required
-          />
-          <button type="submit" class="submit-buttom">Iniciar sesión</button>
-          
-          <a href="#">He olvidado mi contraseña</a>
-          
-          <a href="/html/register.html">Crear cuenta nueva</a>
+          <input type="password" name="user-password" id="user-password" class="input-box" required/>
+          <a href="#" class="hover-opacity">He olvidado mi contraseña</a>
+
+          <button type="submit" class="submit-button hover-opacity">Iniciar sesión</button>
+          <a href="/html/register.html" class="white-button ">Crear cuenta</a>
         </fieldset>
       </form>
     </main>
