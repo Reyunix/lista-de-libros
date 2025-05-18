@@ -71,10 +71,9 @@ textarea{
     cursor: pointer;
 }
 
-/* Hover y animaciones */
+/* Hover y transiciones */
 .white-button{
-    transition: color 0.3s ease;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .white-button:hover{
@@ -82,6 +81,8 @@ textarea{
     color: var(--light-text-color);
     border-color: var(--secondary-color);
 }
+
+
 
 /* Media Queries para mejorar la experiencia responsive*/
 @media (min-width: 771px){
