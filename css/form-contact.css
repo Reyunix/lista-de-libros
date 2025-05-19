@@ -8,9 +8,6 @@ textarea{
 }
 
 /* Estilos específicos */
-fieldset{
-    text-align: center;
-}
 .form-container{
     display: flex;
     justify-content: center;
@@ -84,8 +81,6 @@ fieldset{
     color: var(--light-text-color);
     border-color: var(--secondary-color);
 }
-
-
 
 /* Media Queries para mejorar la experiencia responsive*/
 @media (min-width: 771px){
