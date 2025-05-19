@@ -8,6 +8,9 @@ textarea{
 }
 
 /* Estilos específicos */
+fieldset{
+    text-align: center;
+}
 .form-container{
     display: flex;
     justify-content: center;
