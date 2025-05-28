@@ -45,7 +45,7 @@ body{
     min-height: 100vh;
     gap: 1.5rem;
     min-height: 100dvh;
-    width: 100dvw;
+    width: 100%;
 
     background-color: var(--background-dark-color);
     color: var(--light-text-color);
@@ -118,7 +118,7 @@ body{
 .main-footer{
     background-color: var(--footer-color);
     min-height: 20dvh;
-    width: 100dvw;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
