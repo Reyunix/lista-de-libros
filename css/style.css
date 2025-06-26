@@ -61,7 +61,7 @@ body{
 }
 
 .main-menu a{
-    color: var(--light-text-color);   
+    /* color: var(--light-text-color);    */
     padding: 0.3rem;
     font-weight: 700;
     font-size: 1rem;
@@ -171,12 +171,100 @@ body{
       gap: 0.8rem;
   
   }
+
+
   .rounded-image{
     width: 100%;
     height: auto;
     border-radius: 10px;
 
   }
+
+/* SPA */
+.grid-app{
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill, 
+        minmax(180px, 1fr)
+    );
+        gap: 0.8rem;
+}
+
+.coverImg{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.bookCard{
+    animation: reveal linear both;
+    animation-timeline: view();    /* No funciona en todos los navegadores todavía [probar en Chromium] */
+    animation-range: entry 10% cover 40%;
+    transition: 0.3s ease-in-out;
+
+}
+
+.bookCard:hover{
+    scale:1.01;
+    opacity: 1;
+}
+
+.bookCard {
+
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    background-color: #272b2b;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bookPage-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bookPage-CoverImg{
+    max-width: 250px;
+    border-radius: 30px;
+}
+
+.bookPage-Btn{
+    width: fit-content;
+    border-radius: 5px;
+    background-color: var(--enhance-color);
+    border:none;
+    padding: 10px;
+}
+
+.bookPage-Description{
+    max-width: 60ch;
+    text-wrap: balance;
+    font-size: 12px;
+}
+
+.added{
+    background-color: var(--secondary-color);
+    padding: 5px;
+    width: fit-content;
+    border-radius: 5px;
+    border: none;
+    color: #e2e2e2;
+}
+
+.notAdded{
+    background-color: var(--enhance-color);
+    padding: 5px;
+    width: fit-content;
+    border-radius: 5px;
+    border: none;
+}
 
 /* Hover y animaciones */
 .hover-opacity{
@@ -198,6 +286,33 @@ body{
 .rounded-image:hover{
     scale:1.1;
     opacity: 1;
+}
+
+.enhanced-color{
+    color: black;
+    background-color: var(--enhance-color);
+    border-radius: 10px;
+}
+
+.searchBar{
+    min-width: 500px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    position: relative;
+}
+
+.searchBar-Container{
+    position: relative;
+}
+
+.defaultBtn{
+    background-color: var(--enhance-color);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
 }
 
 @keyframes reveal{

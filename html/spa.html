@@ -6,20 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Colección de Libros</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../assets/img/icon.png" type="image/x-icon">
-    <!-- Estilos -->
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/form-contact.css">
+    <link rel="shortcut icon" href="./assets/img/icon.png" type="image/x-icon">
     <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/style.css">
     <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
   </head>
-  <!-- Contenido principal de la página -->
+        <!-- Contenido de la página -->
   <body>
-    <!-- Encabezado principal y barra de navegación -->
+    <!-- Encabezados principales y barra de navegación -->        
     <header class="header">
       <nav class="main-menu">
         <ul>
@@ -30,31 +29,18 @@
           <li class="hover-opacity"><a href="spa.html" class="enhanced-color">Buscar</a></li>
         </ul>
       </nav>
-      <h1 class="main-title">Iniciar sesión</h1>
-      <p>Introduce tus credenciales para acceder a tu cuenta</p>
+      <div class="searchBar-Container">
+        <form id="searchForm">
+            <input type="text" id="queryInput" placeholder="Esribe un título o autor" class="searchBar"/>
+            <button id="searchBtn" class="defaultBtn">🔍</button>
+          </form>
+      </div>
+        <button type="button" id="myListButton" class="defaultBtn">Mi lista</button>
     </header>
-    <main class="main-content">
-      <!-- Sección de formulacio de incio de sesión -->
-      <section class="login-section">
-        <!-- Las acciones están pendientes de ser implementadas en el backend -->
-        <form action="#" method="post" name="login-form" autocomplete="on" class="form">
-          <fieldset class="form-container">
-            <legend>Datos de inicio de sesión</legend>
-
-            <label for="username">Usuario o Correo</label>
-            <input type="text" name="username" id="username" class="input-box" autofocus required/>
-            
-            <label for="user-password">Contraseña</label>
-            <input type="password" name="user-password" id="user-password" class="input-box" required/>
-            <!-- No implementado todavía -->
-            <a href="#" class="hover-opacity">He olvidado mi contraseña</a>
-
-            <button type="submit" class="submit-button hover-opacity">Iniciar sesión</button>
-            <a href="register.html" class="white-button ">Crear cuenta</a>
-          </fieldset>
-        </form>
-      </section>
-    </main>
+        <!-- Contenido principal de la página -->
+          <main id="mainContent">
+        <section id="app"></section>
+      </main>
     <!-- Pie principal de la página -->
     <footer class="main-footer">
       <section class="footer-info">
@@ -76,5 +62,6 @@
         <a href="https://www.linkedin.com/in/franurzualopez/" class="hover-opacity" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
       </section>
     </footer>
-  </body>    
+    <script src="../main.js"></script>
+  </body>
 </html>
